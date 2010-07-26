@@ -5,7 +5,7 @@
 
 Summary:	Mongo Database Driver
 Name:		php-%{modname}
-Version:	1.0.4
+Version:	1.0.8
 Release:	%mkrel 1
 Group:		Development/PHP
 License:	Apache License
@@ -31,8 +31,7 @@ cp %{SOURCE1} %{inifile}
 %serverbuild
 
 phpize
-%configure2_5x --with-libdir=%{_lib} \
-    --with-%{modname}=shared,%{_prefix}
+%configure2_5x --with-libdir=%{_lib}
 %make
 mv modules/*.so .
 
@@ -62,7 +61,7 @@ rm -rf %{buildroot}
 
 %files 
 %defattr(-,root,root)
-%doc README.rdoc package*.xml 
+%doc README.md package*.xml 
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
 
