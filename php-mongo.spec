@@ -6,7 +6,7 @@
 Summary:	Mongo Database Driver
 Name:		php-%{modname}
 Version:	1.0.10
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Development/PHP
 License:	Apache License
 URL:		http://pecl.php.net/package/mongo/
