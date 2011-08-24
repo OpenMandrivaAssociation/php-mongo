@@ -5,7 +5,7 @@
 
 Summary:	Mongo Database Driver
 Name:		php-%{modname}
-Version:	1.2.3
+Version:	1.2.4
 Release:	%mkrel 1
 Group:		Development/PHP
 License:	Apache License
