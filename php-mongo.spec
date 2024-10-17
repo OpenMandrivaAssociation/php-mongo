@@ -9,7 +9,7 @@ Version:	1.2.10
 Release:	3
 Group:		Development/PHP
 License:	Apache License
-URL:		http://pecl.php.net/package/mongo/
+URL:		https://pecl.php.net/package/mongo/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Source1:	mongo.ini
 BuildRequires:	php-devel >= 3:5.2.0
